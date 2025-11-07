@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Future Foundation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+      background-color: #f6fff4;
+      color: #2f3e2f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    header h1 {
+      color: #1b5e20;
+      font-weight: 700;
+    }
+
+    header nav a {
+      color: #2f3e2f;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      color: #1b5e20;
+    }
+
+    section {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #hero {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    #activity {
+      background-color: #e8f5e9;
+    }
+
+    #activity h2 {
+      color: #1b5e20;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #activity p {
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .img-box {
+      width: 80%;
+      max-width: 800px;
+      height: 400px;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    #stories {
+      background: #ffffff;
+    }
+
+    #stories h2 {
+      font-size: 2.5rem;
+      color: #1b5e20;
+      margin-bottom: 2rem;
+    }
+
+    .blog {
+      max-width: 800px;
+      text-align: left;
+    }
+
+    .blog article {
+      background: #f0f8f5;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .blog article h3 {
+      color: #2e7d32;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      #hero h2 {
+        font-size: 2rem;
+      }
+      .img-box {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Green Future</h1>
+    <nav>
+      <a href="#hero">홈</a>
+      <a href="#activity">활동소개</a>
+      <a href="#stories">이야기</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>도시 속 생태 복원을 꿈꾸다</h2>
+    <p>그린퓨처재단은 도시의 잃어버린 자연을 되살리는 ‘도시 생태 정원 프로젝트’를 진행합니다.  
+    시민과 함께, 작은 공간에서부터 지구의 미래를 바꿔갑니다.</p>
+  </section>
+
+  <section id="activity">
+    <h2>🌱 핵심 활동: 도시 속 생태 복원 프로젝트</h2>
+    <p>
+      도시 곳곳의 공터, 옥상, 학교 주변에 작은 생태 정원을 조성합니다.<br>
+      자원봉사자와 함께 토양을 되살리고, 꽃과 풀, 나무를 심으며<br>
+      곤충과 새가 다시 돌아올 수 있는 환경을 만듭니다.
+    </p>
+    <div class="img-box"></div>
+  </section>
+
+  <section id="stories">
+    <h2>🌍 활동 이야기</h2>
+    <div class="blog">
+      <article>
+        <h3>🌸 학교 옥상에 핀 첫 번째 정원</h3>
+        <p>올봄, 통영여고의 옥상에 첫 생태정원이 조성되었습니다. 학생들이 직접 흙을 고르고, 꽃씨를 심으며 ‘작은 숲’을 만들었습니다. 나비와 꿀벌이 찾아오는 모습을 보며 모두가 웃었습니다.</p>
+      </article>
+      <article>
+        <h3>🪶 시민 자원봉사자의 하루</h3>
+        <p>주말마다 모이는 자원봉사자들은 버려진 공터를 새롭게 바꿉니다. 흙을 갈아엎고, 빗물 저장통을 설치하며, 사람과 자연이 공존하는 도시의 변화를 만들어갑니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Green Future Foundation. All rights reserved.
+  </footer>
+
+  <script>
+    // 스크롤 시 섹션 등장 애니메이션
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+</body>
+</html>
